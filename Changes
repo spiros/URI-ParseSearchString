@@ -54,3 +54,4 @@ Revision history for URI-ParseSearchString
 3.43    Added Conduit (thanks mtm), cleaned up POD
 3.44    Added some Indian search engines (thanks Alex)
 3.441   Code is now on github
+3.442   Added Cuil PT

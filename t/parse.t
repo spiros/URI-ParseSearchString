@@ -1,7 +1,7 @@
 use strict;
 use warnings ;
 
-use Test::More tests => 493;
+use Test::More tests => 497;
 use Test::NoWarnings;
 
 use_ok('URI::ParseSearchString') ;
@@ -110,6 +110,7 @@ my $raa_simpleTests = [
    [ 'http://in.search.yahoo.com/search;_ylt=A0oG75Wz6K5M6WoANuu6HAx.;_ylc=X1MDMjE0MjQ3ODk0OARfcgMyBGZyA3NmcARuX2dwcwM1BG9yaWdpbgNzeWMEcXVlcnkDYSBzaW1wbGUgdGVzdARzYW8DMQ--?p=a+simple+test&fr=sfp&fr2=&iscqry=',   'Yahoo India', 'in.search.yahoo.com' ],
   [ 'http://search1.rediff.com/dirsrch/default.asp?src=web&MT=a%20simple%20test',   'Rediff', 'rediff.com' ],
   [ 'http://www.guruji.com/search?hl=en&q=a+simple+test&sb=1',   'Guruji', 'guruji.com' ],
+  ['http://www.cuil.pt/results.html?cx=004604575179660434744%3Aiy7nuhrkv7g&cof=FORID%3A10&ie=UTF-8&q=a+simple+test&sa=Search', 'Cuil PT', 'cuil.pt']
    
    
 ] ;
