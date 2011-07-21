@@ -15,11 +15,11 @@ URI::ParseSearchString - parse search engine referrer URLs and extract keywords 
 
 =head1 VERSION
 
-Version 3.442  (Minecraft edition)
+Version 3.443  (Minecraft edition)
 
 =cut
 
-our $VERSION = '3.442';
+our $VERSION = '3.443';
 
 =head1 SYNOPSIS
 
@@ -399,6 +399,9 @@ my $RH_LOOKUPS = {
    'rediff.com'             => { name => 'Rediff',           q => 'MT' },
    'guruji.com'             => { name => 'Guruji',           q => 'q'  },
    
+   'isohunt.com'            => { name => 'Isohunt',          q => 'ihq' },
+   'btjunkie.org'           => { name => 'BT Junkie',        q => 'q' },
+   'torrentz.eu'            => { name => 'Torrentz',         q => 'f' }
    
 };
 
