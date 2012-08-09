@@ -1,7 +1,7 @@
 use strict;
 use warnings ;
 
-use Test::More tests => 509;
+use Test::More tests => 515;
 use Test::NoWarnings;
 
 use_ok('URI::ParseSearchString') ;
@@ -236,3 +236,16 @@ is(
    '"The Berwick Inn" Sussex',
    'proper escaping'
 );
+
+my $ra_bad_strings = [ 'http:', 'http://', 'https:', 'https://', 'http', 'https' ];
+
+foreach my $bad_string (@$ra_bad_strings) {
+    is(
+        $obj->se_host( $bad_string ),
+        undef,
+        'badly formatted strings'
+    );
+    
+}
+
+

@@ -15,11 +15,11 @@ URI::ParseSearchString - parse search engine referrer URLs and extract keywords 
 
 =head1 VERSION
 
-Version 3.443  (Minecraft edition)
+Version 3.5  (Diablo 3 edition)
 
 =cut
 
-our $VERSION = '3.443';
+our $VERSION = '3.5';
 
 =head1 SYNOPSIS
 
@@ -476,6 +476,8 @@ sub _uri {
 	
     my $host = $uri->host;
     
+    return unless defined($host) && $host;
+    
    if ( $host =~ m/(feedster|technorati)\.com$/ ){
 	   $uri->query_form( q => ( $uri->path_segments)[-1]);
 	}
@@ -537,8 +539,9 @@ sub findEngine {
   ## create a URI object
   
   my ($uri,$hostname) = $self->_uri( $string );
-  return unless defined($uri);
-	
+  return unless defined($uri) && $uri;
+  return unless defined($hostname) && $hostname;
+  
   my $canonical = $self->{'engines'}->{$hostname}->{'name'};
 	
   return ($hostname,$canonical);

@@ -56,3 +56,4 @@ Revision history for URI-ParseSearchString
 3.441   Code is now on github
 3.442   Added Cuil PT
 3.443   Added Torrentz, Isohunt and BT Junkie
+3.5     Fixed bug with badly formatted strings (thanks mtm)
