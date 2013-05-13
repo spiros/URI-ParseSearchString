@@ -9,17 +9,19 @@ use strict;
 use URI;
 use Data::Dumper;
 
+=encoding utf8
+
 =head1 NAME
 
 URI::ParseSearchString - parse search engine referrer URLs and extract keywords used
 
 =head1 VERSION
 
-Version 3.5  (Diablo 3 edition)
+Version 3.51  (Diablo 3 edition)
 
 =cut
 
-our $VERSION = '3.5';
+our $VERSION = '3.51';
 
 =head1 SYNOPSIS
 
